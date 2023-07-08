@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<style>
+    @font-face {
+    font-family: Alexandria;
+    src: url("fonts/Alexandria-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container, .row {
+    height: 100%;
+}
+body {
+    font-family: Alexandria;    
+    direction: rtl;
+    height: auto;
+}
+.fixed-search {
+    position: fixed;
+    top: 0px;
+    z-index: 999999999999999;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.05), 0px 0px 6px rgba(0, 0, 0, 0.09), 0px 0px 3px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.fixed-search input {
+    border: none;
+    background-color: #fff;
+    outline: none;   
+}
+a {
+    text-decoration: none;
+}
+.main-title{
+    font-weight: 400;
+    font-size: 18px;
+    color: #0F0F0F;
+    margin-bottom: 20px;
+}
+.main-title h3{
+    font-weight: 400;
+    font-size: 18px;
+    color: #0F0F0F;
+    margin-bottom: 20px;
+}
+.filter {
+    border: 1px solid #f0eff294;
+    border-radius: 120px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+.filter p {
+    font-size: 12px;
+    font-weight: 400;
+}
+p {
+    margin-bottom: 0px;
+}
+.card-service {
+    box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.01), 0px 4px 2px rgba(0, 0, 0, 0.05), 0px 2px 2px rgba(0, 0, 0, 0.09), 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.card-img img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+.rate {
+    padding-right: 3px;
+    color: #FCB354;
+    font-weight: 400;
+    font-size: 12px;
+}
+.cards{
+    margin-top: 35px;
+}
+.card-title {
+    font-weight: 400;
+    font-size: 12px;
+    padding-top: 10px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.card-text {
+    font-weight: 300;
+    font-size: 12px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.date {
+    color: #EE8454;
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 3px;
+}
+.fixed-menu {
+    position: fixed;
+    bottom: 0px;
+    z-index: 999999999999999;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.05), 0px 0px 6px rgba(0, 0, 0, 0.09), 0px 0px 3px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+.fixed-menu ul li a {
+    color: #0F0F0F;
+    font-size: 12px;
+    font-weight: 400;
+}
+</style>
+<body>
+    <div class="fixed-search">
+        <img src="images/solar_rounded-magnifer-linear.png" width="20px" height="20px" alt="">
+        <input type="text">
+        <a href="" style="float:left"><img src="images/solar_square-arrow-left-broken.png" width="20px" height="20px"></a>
+    </div>
+    <div class="fixed-menu">
+        <ul class="d-flex justify-content-between align-items-center pe-3 ps-3">
+           <li><a href=""> الحساب</a></li>
+           <li><a href="">طلباتي</a></li>
+           <li><a href="">الرسائل</a></li>
+           <li><a href="">التنبيهات</a></li>
+           <li><a href="">الرئيسية</a></li>
+        </ul>
+    </div>
+    <div class="wrapper " style="padding-top: 90px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="main-title d-flex align-items-center justify-content-between">
+                        <h3><img src="images/solar_headphones-round-sound-broken (1).png" alt=""> الشعر الصوتي</h3>
+                        <div class="filter">
+                            <img src="images/solar_filter-broken (1).png" alt="">
+                            <p>فلتر</p>
+                        </div>
+                    </div>
+                    <p style="color: #0f0f0f7c;font-size: 12px;margin-bottom: 19px;">خدمات الشعر الكتابي يمكنك طلب الخدمة من احد الشعراء</p>
+                </div>
+                <div class="cards">
+                    <div class="reverse-card">
+                        <div class="card-service d-flex">
+                            <div class="card-img" style="flex-basis:45%;">
+                                <img src="images/Rectangle 88.png" width="100%" height="170px" alt="">
+                            </div>
+                            <div class="card-data me-3" style="flex-basis:55%;">
+                                <img src="images/Vector.png" alt="">
+                                <span class="rate">4.5</span>
+                                <h3 class="card-title">ساكتب لك قصيدة بالشعر الفصيح</h3>
+                                <p class="card-text">الشاعر محمد احمد ابراهيم</p>
+                           
+                            <div class="card-footer pt-3 d-flex justify-content-between align-items-center">
+                                <img src="images/solar_headphones-round-sound-broken (1).png">
+                                 <p class="date">12<span>أبريل</span></p>
+                                 
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="reverse-card">
+                        <div class="card-service d-flex">
+                            <div class="card-img" style="flex-basis:45%;">
+                                <img src="images/Rectangle 88.png" width="100%" height="170px" alt="">
+                            </div>
+                            <div class="card-data me-3" style="flex-basis:55%;">
+                                <img src="images/Vector.png" alt="">
+                                <span class="rate">4.5</span>
+                                <h3 class="card-title">ساكتب لك قصيدة بالشعر الفصيح</h3>
+                                <p class="card-text">الشاعر محمد احمد ابراهيم</p>
+                           
+                            <div class="card-footer pt-3 d-flex justify-content-between align-items-center">
+                                <img src="images/solar_headphones-round-sound-broken (1).png">
+                                 <p class="date">12<span>أبريل</span></p>
+                                 
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="reverse-card">
+                        <div class="card-service d-flex">
+                            <div class="card-img" style="flex-basis:45%;">
+                                <img src="images/Rectangle 88.png" width="100%" height="170px" alt="">
+                            </div>
+                            <div class="card-data me-3" style="flex-basis:55%;">
+                                <img src="images/Vector.png" alt="">
+                                <span class="rate">4.5</span>
+                                <h3 class="card-title">ساكتب لك قصيدة بالشعر الفصيح</h3>
+                                <p class="card-text">الشاعر محمد احمد ابراهيم</p>
+                           
+                            <div class="card-footer pt-3 d-flex justify-content-between align-items-center">
+                                <img src="images/solar_headphones-round-sound-broken (1).png">
+                                 <p class="date">12<span>أبريل</span></p>
+                                 
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="reverse-card">
+                        <div class="card-service d-flex">
+                            <div class="card-img" style="flex-basis:45%;">
+                                <img src="images/Rectangle 88.png" width="100%" height="170px" alt="">
+                            </div>
+                            <div class="card-data me-3" style="flex-basis:55%;">
+                                <p class="rate">4.5</p>
+                                <h3 class="card-title">ساكتب لك قصيدة بالشعر الفصيح</h3>
+                                <p class="card-text">الشاعر محمد احمد ابراهيم</p>
+                           
+                            <div class="card-footer pt-3 d-flex justify-content-between align-items-center">
+                                <img src="images/solar_headphones-round-sound-broken (1).png">
+                                 <p class="date">12<span>أبريل</span></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.js"></script>
+</body>
+</html>
